@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 namespace ProjetoXadrez {
     class Program {
         static void Main(string[] args) {
+            /*
             try {
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
@@ -20,6 +21,11 @@ namespace ProjetoXadrez {
             } catch (TabuleiroException e) {
                 Console.WriteLine(e.Message);
             }
+            */
+
+            PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+            Console.WriteLine(pos);
+            Console.WriteLine(pos.toPosicao());
 
             Console.ReadLine();
         }
