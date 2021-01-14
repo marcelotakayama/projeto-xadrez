@@ -1,5 +1,4 @@
-﻿using ProjetoXadrez.tabuleiro;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +11,8 @@ namespace tabuleiro {
         public int qteMovimentos { get; set; }
         public Tabuleiro tab { get; set; }
 
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor) {
-            this.posicao = posicao;
+        public Peca(Tabuleiro tab, Cor cor) {
+            this.posicao = null;
             this.tab = tab;
             this.cor = cor;
             this.qteMovimentos = 0;
