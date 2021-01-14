@@ -24,5 +24,11 @@ namespace tabuleiro {
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
         }
+
+        public bool posicaoValida(Posicao pos) {
+            if(pos.linha<0 || pos.linha>=linhas || pos.coluna<0 || pos.coluna >= colunas) {
+                return false;
+            } return true;
+        }
     }
 }
