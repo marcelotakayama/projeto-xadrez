@@ -44,7 +44,7 @@ namespace tabuleiro {
             Peca aux = peca(pos);
             aux.posicao = null;
             pecas[pos.linha, pos.coluna] = null;
-            return aux
+            return aux;
         }
 
         public bool posicaoValida(Posicao pos) {
