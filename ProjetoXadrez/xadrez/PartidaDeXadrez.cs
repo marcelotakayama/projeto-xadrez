@@ -118,6 +118,7 @@ namespace xadrez {
                     return true;
                 }
             }
+            return false;
         }
 
         public void colocarNovaPeca(char coluna, int linha, Peca peca) {
