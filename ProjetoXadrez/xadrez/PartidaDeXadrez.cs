@@ -65,7 +65,7 @@ namespace xadrez {
             if(jogadorAtual == Cor.Branca) {
                 jogadorAtual = Cor.Preta;
             } else {
-                jogadorAtual = Cor.Preta;
+                jogadorAtual = Cor.Branca;
             }
         }
 
