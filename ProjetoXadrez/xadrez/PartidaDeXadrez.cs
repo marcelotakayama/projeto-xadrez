@@ -151,7 +151,7 @@ namespace xadrez {
         }
 
         public bool testeXequeMate(Cor cor) {
-            if (!estaEmXeque(cor){
+            if (!estaEmXeque(cor)){
                 return false;
             }
             foreach (Peca x in pecasEmJogo(cor)) {
