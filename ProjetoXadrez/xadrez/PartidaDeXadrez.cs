@@ -155,11 +155,18 @@ namespace xadrez {
                 for(int i=0; i<tab.linhas; i++) {
                     for(int j=0; j<tab.colunas; j++) {
                         if(mat[i, j]) {
+                            Posicao destino = new Posicao(i, j);
                             Peca pecaCapturada = executaMovimento(x.posicao, new Posicao(i, j));
+                            bool testeXeque = estaEmXeque(cor);
+                            desfazMovimento(x.posicao, destino, pecaCapturada);
+                            if (!testeXeque) {
+                                return false;
+                            }
                         }
                     }
                 }
             }
+            return true;
         }
 
         public void colocarNovaPeca(char coluna, int linha, Peca peca) {
