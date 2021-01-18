@@ -72,7 +72,7 @@ namespace xadrez {
                 mudaJogador();
             }
         }
-
+        //teste
         public void validarPosicaoDeOrigem(Posicao pos) {
             if (tab.peca(pos) == null) {
                 throw new TabuleiroException("Não existe peça na posição de origem escolhida");
@@ -198,7 +198,6 @@ namespace xadrez {
             colocarNovaPeca('f', 2, new Peao(tab, Cor.Branca));
             colocarNovaPeca('g', 2, new Peao(tab, Cor.Branca));
             colocarNovaPeca('h', 2, new Peao(tab, Cor.Branca));
-     
             
             colocarNovaPeca('a', 8, new Torre(tab, Cor.Preta));
             colocarNovaPeca('b', 8, new Cavalo(tab, Cor.Preta));
