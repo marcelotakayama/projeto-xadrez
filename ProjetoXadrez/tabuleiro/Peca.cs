@@ -17,7 +17,6 @@ namespace tabuleiro {
             this.cor = cor;
             this.qteMovimentos = 0;
         }
-
         
         public void incrementarQteMovimentos() {
             qteMovimentos++;
@@ -26,7 +25,6 @@ namespace tabuleiro {
         public void decrementarQteMovimentos() {
             qteMovimentos--;
         }
-
 
         public bool existeMovimentosPossiveis() {
             bool[,] mat = movimentosPossiveis();
@@ -40,7 +38,7 @@ namespace tabuleiro {
             return false;
         }
 
-        public bool podeMoverPara(Posicao pos) {
+        public bool movimentoPossivel(Posicao pos) {
             return movimentosPossiveis()[pos.linha, pos.coluna];
         }
         
